@@ -211,8 +211,7 @@
 							<textarea placeholder="Masukkan Ucapan Manis Anda Disini" name="mesej"
 								class="contactTextarea" id="mesej" required></textarea>
 						</div>
-						<div class="formTextareaWrap" id="calendar">
-
+						<div id="showcalendar">
 							<p style='text-align: center;'>Tambah di Kalendar</p>
 							<a
 								href='https://www.google.com/calendar/render?action=TEMPLATE&text=Walimatul+Urus+Asyraf+%26+Hanis&location=Namida+Garden+%26+Events%2C+Kota+Warisan&dates=20211205T030000Z%2F20211205T080000Z'>
@@ -432,19 +431,23 @@
 			$("#jumlahkedatanganform").show();
 			$("#hubunganform").show();
 			$("#mesejform").show();
-			$("#calendar").show();
+			$("#showcalendar").show();
 			$("#waktuform").hide();
 
 		} else if ($(this).val() == 2) {
 			$("#mesejform").show();
 			$("#jumlahkedatanganform").hide();
 			$("#hubunganform").hide();
+			$("#showcalendar").hide();
+
 			$("#waktukeluargaform").hide();
 			$("#waktuform").hide();
 		}
 		else {
 			$("#mesejform").hide();
 			$("#jumlahkedatanganform").hide();
+			$("#showcalendar").hide();
+
 			$("#hubunganform").hide();
 			$("#waktuform").hide();
 		}
