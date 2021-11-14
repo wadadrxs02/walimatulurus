@@ -211,6 +211,13 @@
 							<textarea placeholder="Masukkan Ucapan Manis Anda Disini" name="mesej"
 								class="contactTextarea" id="mesej" required></textarea>
 						</div>
+						<div class="formTextareaWrap" id="calendar">
+
+							<p style='text-align: center;'>Tambah di Kalendar</p>
+							<a
+								href='https://www.google.com/calendar/render?action=TEMPLATE&text=Walimatul+Urus+Asyraf+%26+Hanis&location=Namida+Garden+%26+Events%2C+Kota+Warisan&dates=20211205T030000Z%2F20211205T080000Z'>
+								<img style='width: 40%;' src='images/button/GoogleCalendar.svg' class="imgcenter"></a>
+						</div>
 						<div class="modal-footer">
 							<button class="btn btn-primary" type="submit">Hantar</button>
 						</div>
@@ -425,6 +432,7 @@
 			$("#jumlahkedatanganform").show();
 			$("#hubunganform").show();
 			$("#mesejform").show();
+			$("#calendar").show();
 			$("#waktuform").hide();
 
 		} else if ($(this).val() == 2) {
