@@ -2224,7 +2224,7 @@ amp-social-share[type="sms"]:before {
 /* toolbar bottom */
 .toolbar-bottom {
   position: fixed;
-  background: #fff;
+  background: #212529;
   bottom: 0;
   left: 0;
   right: 0;
@@ -2260,13 +2260,13 @@ amp-social-share[type="sms"]:before {
 .toolbar-link {
   width: 100%;
   height: 100%;
-  padding-top: 0px;
+  padding-top: 5px;
   padding-bottom: 5px;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  color: #ccc;
+  background-color: #212529;
   transition: 0.2s ease-in-out;
 }
 
@@ -2607,4 +2607,13 @@ body {
   font-size: 40px;
   color: #845b24;
   text-align: center;
+}
+ul {
+  list-style: none;
+  padding-left: 2px;
+}
+
+ul li:before {
+  content: "✔  ";
+  padding-left: 2px;
 }

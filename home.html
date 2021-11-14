@@ -4,10 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
-	<title>WalimatulUrus Hanis | Ashyraf</title>
+	<title>Walimatul Urus Hanis | Ashyraf</title>
 	<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
 	<link rel="icon" href="images/icons/rings.png">
 	<link rel="canonical" href="index.html">
+	<script src="https://kit.fontawesome.com/a165d3b8d1.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -80,27 +81,33 @@
 	<div class="toolbar">
 		<div class="container">
 			<ul class="toolbar-bottom toolbar-wrap">
+
 				<li class="toolbar-item">
-					<button type="button" class="toolbar-link" data-toggle="modal" data-target="#ModalRSVP">
-						<img src='images/icons/rsvp.png'>
+					<button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalRSVP">
+						<i class="fas fa-envelope-open fa-2x"></i>
+						RSVP
 					</button>
 
 
 				</li>
 				<li class="toolbar-item">
-					<button type="button" class="toolbar-link" data-toggle="modal" data-target="#ModalCalendar">
-						<img src='images/icons/calendar.png'>
+					<button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalSOP">
+						<i class="fas fa-tasks fa-2x"></i>
+						S.O.P
 					</button>
 
 				</li>
 				<li class="toolbar-item">
-					<button type="button" class="toolbar-link" data-toggle="modal" data-target="#ModalContact">
-						<img src='images/icons/contact.png'>
+					<button type="button" class="toolbar-link text-light" data-toggle="modal"
+						data-target="#ModalContact">
+						<i class="fas fa-phone fa-2x"></i>
+						CONTACT
 					</button>
 				</li>
 				<li class="toolbar-item">
-					<button type="button" class="toolbar-link" data-toggle="modal" data-target="#ModalMap">
-						<img src='images/icons/map.png'>
+					<button type="button" class="toolbar-link text-light" data-toggle="modal" data-target="#ModalMap">
+						<i class="fas fa-map-marked-alt fa-2x"></i>
+						LOCATION
 					</button>
 				</li>
 			</ul>
@@ -214,9 +221,38 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- MODAL SOP -->
+	<div class="modal fade" id="ModalSOP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Panduan S.O.P menghadiri Majlis Sosial</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li>Membuat saringan dan daftar kehadiran di pintu masuk (buku rekod kehadiran ATAU scan QR
+							code).</li>
+						<li>Pastikan anda sihat dan tidak bergejala</li>
+						<li>Memakai pelitup muka.</li>
+						<li>Penjarakan sosial (tidak bersentuhan dengan tetamu yang lain).</li>
+						<li>Elakkan membawa anak kecil.</li>
+						<li>Tetamu undangan perlu memberi kerjasama dalam mematuhi masa yang diperuntukkan bagi memberi
+							ruang kepada tetamu yang
+							akan hadir untuk sesi seterusnya.</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Modal Calendar -->
-	<div class="modal fade" id="ModalCalendar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	<!-- <div class="modal fade" id="ModalCalendar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -247,7 +283,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Modal Contact -->
 	<div class="modal fade" id="ModalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
