@@ -51,7 +51,7 @@ h6 {
   overflow: hidden;
 }
 .frame-border {
-  width: 460px;
+  width: 100vw;
   height: 100vh;
   outline: none;
   /* border: solid 20px #000; */
