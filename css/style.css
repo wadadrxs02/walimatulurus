@@ -2619,3 +2619,6 @@ ul {
 .a {
   padding-right: 4px;
 }
+#showcalendar {
+  display: none;
+}
