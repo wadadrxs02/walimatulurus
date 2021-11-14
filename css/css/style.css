@@ -52,7 +52,7 @@ h6 {
 }
 .frame-border {
   width: 460px;
-  height: 630px;
+  height: 100vh;
   outline: none;
   /* border: solid 20px #000; */
   /* border-radius: 40px;
