@@ -1,0 +1,456 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+	<meta charset="utf-8">
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<title>WalimatulUrus Hanis | Ashyraf</title>
+	<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
+	<link rel="icon" href="images/icons/rings.png">
+	<link rel="canonical" href="index.html">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Satisfy">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+	<script>
+		function formButtonhadir() {
+			document.getElementById('rsvpformhadir').style.display = "block";
+			document.getElementById('rsvpformtidakhadir').style.display = "none";
+		}
+
+		function formButtontidakhadir() {
+			document.getElementById('rsvpformtidakhadir').style.display = "block";
+			document.getElementById('rsvpformhadir').style.display = "none";
+		}
+
+		function formButtonkeluarga() {
+			document.getElementById('rsvpformkeluarga').style.display = "block";
+			document.getElementById('rsvpformkenalan').style.display = "none";
+		}
+
+		function formButtonkenalan() {
+			document.getElementById('rsvpformkenalan').style.display = "block";
+			document.getElementById('rsvpformkeluarga').style.display = "none";
+		}
+
+	</script>
+
+
+
+</head>
+
+
+<body>
+
+	<div class="page-content-scroll">
+		<div class="cover-class cover-bg-1">
+		</div>
+		<div class="cover-class2 cover-bg-2">
+		</div>
+		<div class="col-md-12">
+			<h3 class="hari pt-5">Menghitung Hari</h3>
+		</div>
+		<div class="timer-countdown cover-class3">
+
+
+			<div class="outside">
+				<div class="inside" style="text-align: center;">
+					<br>
+					<h3></h3>
+					<div class="timer-style" id="timer">
+
+					</div>
+				</div>
+			</div>
+
+
+			<br><br><br><br><br>
+
+		</div>
+	</div>
+
+	<!-- toolbar bottom -->
+	<div class="toolbar">
+		<div class="container">
+			<ul class="toolbar-bottom toolbar-wrap">
+				<li class="toolbar-item">
+					<button type="button" class="toolbar-link" data-toggle="modal" data-target="#ModalRSVP">
+						<img src='images/icons/rsvp.png'>
+					</button>
+
+
+				</li>
+				<li class="toolbar-item">
+					<button type="button" class="toolbar-link" data-toggle="modal" data-target="#ModalCalendar">
+						<img src='images/icons/calendar.png'>
+					</button>
+
+				</li>
+				<li class="toolbar-item">
+					<button type="button" class="toolbar-link" data-toggle="modal" data-target="#ModalContact">
+						<img src='images/icons/contact.png'>
+					</button>
+				</li>
+				<li class="toolbar-item">
+					<button type="button" class="toolbar-link" data-toggle="modal" data-target="#ModalMap">
+						<img src='images/icons/map.png'>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- end toolbar bottom -->
+
+
+	<!-- Modal RSVP -->
+	<div class="modal fade" id="ModalRSVP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="ModalRSVPTitle">Sila Respon...</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<form name="rsvpform">
+						<div class="formFieldWrap">
+							<label class="field-title" for="nama">Nama:
+							</label>
+							<input type="text" placeholder="Sila Isi Nama Anda" name="nama" class="contactField"
+								id="nama" required />
+						</div>
+
+						<div class="formFieldWrap">
+							<label class="field-title" for="nombortelefon">Nombor Telefon:
+							</label>
+							<input type="text" placeholder="Sila Isi Nombor Telefon Anda" name="nombortelefon"
+								class="contactField" id="nombortelefon" required />
+						</div>
+
+						<div class="formFieldWrap">
+							<label class="field-title" for="kedatangan">Kehadiran:
+							</label>
+							<select id="kedatangan" name="kedatangan" class="contactField">
+								<option value="">Pilih Hadir atau Tidak</option>
+								<option value="1">Hadir</option>
+								<option value="2">Tidak Hadir</option>
+							</select>
+						</div>
+
+						<div class="formFieldWrap" id="jumlahkedatanganform">
+							<label class="field-title" for="jumlahkedatangan">Jumlah Kedatangan:
+							</label>
+							<select id="jumlahkedatangan" name="jumlahkedatangan" class="contactField">
+								<option value="">Sila Pilih Jumlah Kedatangan Anda</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+
+						<div class="formFieldWrap" id="hubunganform">
+							<label class="field-title" for="hubungan">Hubungan:
+							</label>
+							<select id="hubungan" name="hubungan" class="contactField">
+								<option value="">Pilih Hubungan</option>
+								<option value="1">Keluarga</option>
+								<option value="2">Kenalan</option>
+							</select>
+						</div>
+
+						<div class="formFieldWrap" id='waktuform'>
+							<label class="field-title" for="waktu">Waktu Kedatangan:
+							</label>
+							<select id="waktu" name="waktu" class="contactField">
+								<option value="">Sila Pilih Waktu Kedatangan Anda</option>
+								<option id="waktu1" value="11am-12pm">11 Pagi - 12 Tengah Hari</option>
+								<option id="waktu2" value="12pm-1pm">12 Tengah Hari - 1 Petang </option>
+								<option id="waktu3" value="1pm-2pm">1 Petang - 2 Petang</option>
+								<option id="waktu4" value="2pm-3pm">2 Petang - 3 Petang</option>
+								<option id="waktu5" value="3pm-4pm">3 Petang - 4 Petang </option>
+							</select>
+						</div>
+
+
+						<div class="formTextareaWrap" id="mesejform">
+							<label class="field-title contactMessageTextarea" for="Mesej">Ucapan Manis Anda:
+							</label>
+							<textarea placeholder="Masukkan Ucapan Manis Anda Disini" name="mesej"
+								class="contactTextarea" id="mesej" required></textarea>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-primary" type="submit">Hantar</button>
+						</div>
+					</form>
+					<div id="form_alert"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Calendar -->
+	<div class="modal fade" id="ModalCalendar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Simpan Kalendar</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="calendarcontainer">
+						<div class="calendartop">
+							<p class="calendartoptext">Ahad</p>
+						</div>
+						<div class="calendarbottom">
+							<p class="calendarbottomtext">5 Disember 2021</p>
+						</div>
+					</div>
+					<br>
+					<p style='text-align: center;'>Tambah di Kalendar</p>
+					<a
+						href='https://www.google.com/calendar/render?action=TEMPLATE&text=Walimatul+Urus+Asyraf+%26+Hanis&location=Namida+Garden+%26+Events%2C+Kota+Warisan&dates=20211205T030000Z%2F20211205T080000Z'>
+						<img style='width: 40%;' src='images/button/GoogleCalendar.svg' class="imgcenter"></a>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Contact -->
+	<div class="modal fade" id="ModalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Hubungi</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="gridcontainer">
+						<div class="gridname">
+							Hafiz
+						</div>
+						<div class="griditem">
+							<a href="tel:+60199075458">
+								<img src="images/icons/call.png" alt="" width="70%">
+							</a>
+						</div>
+						<div class="griditem">
+							<a href="https://wa.link/cf2uz8">
+								<img src="images/icons/whatsapp.png" alt="" width="50%">
+							</a>
+						</div>
+					</div>
+					<div class="gridcontainer">
+						<div class="gridname">
+							Hazim
+						</div>
+						<div class="griditem">
+							<a href="tel:+60142350524">
+								<img src="images/icons/call.png" alt="" width="70%">
+							</a>
+						</div>
+						<div class="griditem">
+							<a href="https://wa.link/8z51j9">
+								<img src="images/icons/whatsapp.png" alt="" width="50%">
+							</a>
+						</div>
+					</div>
+					<div class="gridcontainer">
+						<div class="gridname">
+							Huda Iffah
+						</div>
+						<div class="griditem">
+							<a href="tel:+60129144625">
+								<img src="images/icons/call.png" alt="" width="70%">
+							</a>
+						</div>
+						<div class="griditem">
+							<a href="https://wa.link/p3wf2c">
+								<img src="images/icons/whatsapp.png" alt="" width="50%">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Map -->
+	<div class="modal fade" id="ModalMap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Lokasi</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="map">
+						<!-- Google Map Copied Code -->
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.0228669810945!2d101.7073509140433!3d2.8094377559322314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdc745f68e528b%3A0x548ed8b09bfa7014!2sNamida%20Garden%20%26%20Events!5e0!3m2!1sen!2smy!4v1636613846744!5m2!1sen!2smy"
+							width="350" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+							aria-hidden="false" tabindex="0" class='imgcenter'>
+						</iframe>
+					</div>
+
+					<div class="gridcontainer2">
+
+						<div class="griditem2">
+							<a
+								href="https://www.waze.com/en/live-map/directions/namida-garden-and-event-jalan-stesen-erl-33-sepang?place=w.66650140.666566937.23314902">
+								<img src="images/button/waze.svg" alt="" width="150px"><br>
+
+							</a>
+						</div>
+
+						<div class="griditem2">
+							<a href="https://goo.gl/maps/hqsMPjXPPc2uVtc28">
+								<img src="images/button/googlemap.svg" alt="" width="150px"> <br>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
+
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbwHNW3OOHCsGOXc9s4Eyg64bj56GHyTD5A0-LYhMT_4qiqpwZ2PSRLwGvOYI8tQ09M/exec'
+	const form = document.forms['rsvpform']
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => $("#form_alert").html("<div class='alert alert-success'> RSVP sent successfully.</div>"))
+			.catch(error => $("#form_alert").html("<div class='alert alert-success'> RSVP dont sent successfully.</div>"))
+	})
+</script>
+
+<script>
+	$("#kedatangan").change(function () {
+		if ($(this).val() == 1) {
+			$("#jumlahkedatanganform").show();
+			$("#hubunganform").show();
+			$("#mesejform").show();
+			$("#waktuform").hide();
+
+		} else if ($(this).val() == 2) {
+			$("#mesejform").show();
+			$("#jumlahkedatanganform").hide();
+			$("#hubunganform").hide();
+			$("#waktukeluargaform").hide();
+			$("#waktuform").hide();
+		}
+		else {
+			$("#mesejform").hide();
+			$("#jumlahkedatanganform").hide();
+			$("#hubunganform").hide();
+			$("#waktuform").hide();
+		}
+
+	});
+
+	$("#hubungan").change(function () {
+		if ($(this).val() == 1) {
+			$("#waktuform").show();
+			$("#waktu1").show();
+			$("#waktu2").show();
+			$("#waktu3").show();
+			$("#waktu4").hide();
+			$("#waktu5").hide();
+		} else if ($(this).val() == 2) {
+			$("#waktuform").show();
+			$("#waktu1").hide();
+			$("#waktu2").hide();
+			$("#waktu3").hide();
+			$("#waktu4").show();
+			$("#waktu5").show();
+		}
+		else {
+			$("#waktuform").hide();
+			$("#waktu1").hide();
+			$("#waktu2").hide();
+			$("#waktu3").hide();
+			$("#waktu4").hide();
+			$("#waktu5").hide();
+		}
+
+	});
+</script>
+
+<script>
+	function updateTimer() {
+		future = Date.parse("dec 5, 2021 11:00:00");
+		now = new Date();
+		diff = future - now;
+
+		days = Math.floor(diff / (1000 * 60 * 60 * 24));
+		hours = Math.floor(diff / (1000 * 60 * 60));
+		mins = Math.floor(diff / (1000 * 60));
+		secs = Math.floor(diff / 1000);
+
+		d = days;
+		h = hours - days * 24;
+		m = mins - hours * 60;
+		s = secs - mins * 60;
+
+		document.getElementById("timer").innerHTML =
+			"<div>" +
+			d +
+			"<span>Days</span></div>" +
+			"<div>" +
+			h +
+			"<span>Hours</span></div>" +
+			"<div>" +
+			m +
+			"<span>Minutes</span></div>" +
+			"<div>" +
+			s +
+			"<span>Seconds</span></div>";
+	}
+	setInterval("updateTimer()", 1000);
+</script>
+
+</html>
