@@ -1313,7 +1313,7 @@ input[type="date"]::-webkit-clear-button {
   background-repeat: no-repeat;
   background-position: center center;
   height: 50vh;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
   /* border-bottom:solid 1px rgba(255,255,255,0.05); */
 }
