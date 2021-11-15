@@ -1,1 +1,1 @@
-<?php include_once("frame.html"); ?>
+<?php include_once("home.html"); ?>
